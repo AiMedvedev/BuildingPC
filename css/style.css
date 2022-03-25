@@ -6,7 +6,6 @@
 
 html, body {
     color: #fff;
-    font-size: 62,5%;
     font-weight: normal;
     background-image: linear-gradient(to right top, #060605, #050504, #040403, #030302, #020201, #000000);
 }
@@ -35,12 +34,26 @@ button, input {
 }
 
 .container {
-    width: 130rem;
+    width: 1300px;
     margin: 0 auto;
 }
 
+.button {
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    color: #fff;
+}
+
 .header {
-    padding: 4rem 11rem 4rem 8rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    padding: 40px 110px 40px 80px;
+    z-index: 10;
 }
 
 .header-wrap {
@@ -51,19 +64,80 @@ button, input {
 
 .header-logo {
     display: block;
-    width: 4rem;
-    height: 4rem;
+    width: 40px;
+    height: 40px;
 }
 
 .header-menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    min-width: 65%;
+}
+
+.header-nav {
+    font-size: 16px;
+    display: flex;
+    justify-items: center;    
 }
 
 .header-nav a:not(:last-child) {
-    margin-right: 7.1rem;
+    margin-right: 71px;
 }
 
-.header-btn {
-    margin-left: 55.3rem;
+.main-display .container {
+    position: relative;
+    z-index: 10;
+}
+
+.main-display {
+    padding-top: 270px;
+}
+
+.main-title {
+    font-size: 64px;
+    max-width: 760px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.main-timer {
+    display: flex;
+    margin-bottom: 76px;
+}
+
+.timer-item {
+    width: 102px;
+    height: 112px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.timer-count {
+    font-size: 36px;
+}
+
+.timer-text {
+    font-size: 16px;
+    opacity: 0.4;
+}
+
+.main-btn {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.main-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 1920px;
+    height: 960px;  
 }
