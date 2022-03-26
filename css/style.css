@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Bold.woff') format('woff'),
+        url('Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 *,
 *::after,
 *::before {
@@ -5,6 +28,7 @@
 }
 
 html, body {
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: normal;
     background-image: linear-gradient(to right top, #060605, #050504, #040403, #030302, #020201, #000000);
@@ -42,8 +66,10 @@ button, input {
     border-radius: 50px;
     padding: 10px 30px;
     font-size: 16px;
+    line-height: 150%;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     color: #fff;
+    font-weight: 700;
 }
 
 .header {
@@ -77,6 +103,7 @@ button, input {
 
 .header-nav {
     font-size: 16px;
+    line-height: 24px;
     display: flex;
     justify-items: center;    
 }
@@ -88,6 +115,7 @@ button, input {
 .main-display .container {
     position: relative;
     z-index: 10;
+    padding-bottom: 228px;
 }
 
 .main-display {
@@ -96,6 +124,7 @@ button, input {
 
 .main-title {
     font-size: 64px;
+    font-weight: 700;
     max-width: 760px;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -122,10 +151,12 @@ button, input {
 
 .timer-count {
     font-size: 36px;
+    line-height: 140%;
 }
 
 .timer-text {
     font-size: 16px;
+    line-height: 140%;
     opacity: 0.4;
 }
 
@@ -140,4 +171,100 @@ button, input {
     z-index: 1;
     width: 1920px;
     height: 960px;  
+}
+
+.work {
+    padding-top: 200px;
+    padding-bottom: 243px;
+}
+
+.work-wrap {
+    display: flex;
+}
+
+.work-img {
+    width: 526px;
+    height: 499px;
+    margin-right: 139px;
+}
+
+.work-text {
+    max-width: 636px;
+    padding-top: 69px;
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 45px;
+}
+
+.work-description {
+    line-height: 160%;
+}
+
+.process {
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.process-img {
+    width: 90px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.process-title {
+    display: flex;
+}
+
+.process-header {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 49px;
+}
+
+.process-description {
+    line-height: 160%;
+    opacity: 0.5;
+    margin-bottom: 80px;
+    margin-left: 24px;
+    max-width: 411px;
+}
+
+
+
+.process-columns {
+    display: flex;
+}
+
+.process-columns::after {
+    content: '';
+    display: block;
+    width: 1300px;
+    height: 2px;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.process-item {
+    max-width: 306px;
+}
+
+.process-work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;  
+    margin-bottom: 65px;
+}
+
+.process-text {
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.5;
 }
