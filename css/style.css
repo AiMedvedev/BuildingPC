@@ -325,3 +325,57 @@ button, input {
     background: transparent;
     border:  1px #fff solid;
 }
+
+.assembly {
+    padding-bottom: 244px;
+}
+
+.assembly-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assembly-header {
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.assembly-description {
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 45px;
+}
+
+.assembly-button {
+    margin-bottom: 58px;
+    line-height: 150%;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.assembly-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.assembly-item {
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assembly-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.assembly-item img {
+    width: 50%;
+    height: 50%;
+}
