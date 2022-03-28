@@ -67,6 +67,13 @@ button, input {
     --text-size-medium: 1.6rem;
 }
 
+.block-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .button {
     border-radius: 5rem;
     padding: 1rem 3rem;
@@ -383,4 +390,94 @@ button, input {
 .assembly-item img {
     width: 50%;
     height: 50%;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+.modal-inner {
+    width: 66.3rem;
+    padding: 9rem 0;
+    background: #2c2c2c;
+    text-align: center;
+    position: relative;
+}
+
+.modal-header {
+    font-size: 4.8rem;
+    line-height: 140%;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.modal-descr {
+    font-size: var(--text-size-medium);
+    line-height: 160%;
+    opacity: .5;
+    margin-bottom: 2.8rem;
+}
+
+.modal-elements {
+    margin: 0 auto;
+    width: 45.4rem;
+}
+
+.modal-item {
+    height: 4.4rem;
+    
+}
+
+.modal-input {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    line-height: 160%;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.modal-item:not(:last-child) {
+    margin-bottom: 1.8rem;
+}
+
+.modal-item input {
+    padding-left: 3rem;
+}
+
+.modal-item input::placeholder {
+    color: #fff;
+    opacity: .9;
+}
+
+.modal-btn {
+    margin-top: 3.2rem;
+    text-decoration: none;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    text-align: center;
+}
+
+.modal-close {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
 }
