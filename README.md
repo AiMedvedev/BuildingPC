@@ -1,5 +1,8 @@
 # BuildingPC
+Верстка сайта по сборке ПК по макету Figma.
 
-Интенсив по верстке сайта по сборке ПК по макету Figma.
+## Запуск
+https://building-pc-eight.vercel.app/
 
-Использовались: HTML, CSS, JavaScript, Figma.
+## Использовались
+HTML, CSS, JavaScript, Figma.
